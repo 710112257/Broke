@@ -65,7 +65,7 @@ app.use(function(req, res , next){
 });
 // /主页路由
 app.use('/index', indexRouter);
-//关于我
+//关于我的
 app.use('/about', aboutRouter);
 //留言
 app.use('/gbook', gbookRouter);
