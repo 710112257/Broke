@@ -28,7 +28,7 @@ router.get('/delmany-article', function (req, res, next) {
     });
   });
 });
-//点击删除文章
+//点击删除文章的函数
 router.get('/del-article', function (req, res, next) {
   articleModel.deleteOne({ '_id': ObjectId(req.query.id) }, function (err, result) {
     if (err) {
